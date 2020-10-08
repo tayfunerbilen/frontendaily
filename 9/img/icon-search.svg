@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Day-1144-Job-Page-UI-Components" transform="translate(-1083.000000, -341.000000)">
+            <g id="Group-10" transform="translate(259.000000, 170.000000)">
+                <g id="Group-8" transform="translate(784.000000, 131.000000)">
+                    <g id="Group" transform="translate(38.000000, 38.000000)">
+                        <polygon id="Path" points="0 0 30 0 30 30 0 30"></polygon>
+                        <circle id="Oval" stroke="#111127" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" cx="12.5" cy="12.5" r="8.75"></circle>
+                        <path d="M26.25,26.25 L18.75,18.75" id="Path" stroke="#111127" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

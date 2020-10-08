@@ -1,0 +1,389 @@
+@import "icon-font";
+@import "font";
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Louis George Cafe';
+  -webkit-overflow-scrolling: touch;r
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+$primary-color: #157AFF;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #1A212A;
+}
+
+.app {
+  height: 100%;
+
+  .app-inner {
+    height: calc(100% - 60px);
+    overflow: auto;
+  }
+
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 24px;
+    .balance {
+      .text {
+        font-size: 14px;
+        color: rgba(#fff,.5);
+      }
+      .money {
+        font-size: 38px;
+        color: #fff;
+      }
+    }
+    .avatar {
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 2px solid $primary-color;
+        box-shadow: 0 6px 12px 0 rgba($primary-color, .5);
+      }
+    }
+  }
+
+  .actions {
+    overflow-x: auto;
+    margin-bottom: 30px;
+    scroll-snap-type: x mandatory;
+    ul {
+      display: flex;
+      li {
+        padding: 0 15px;
+        scroll-snap-align: start;
+        &:first-child {
+          padding-left: 24px;
+        }
+        &:last-child {
+          padding-right: 24px;
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          .icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            border-radius: 24px;
+            background-color: rgba(#535F6D, .19);
+            color: #fff;
+            font-size: 24px;
+            @include center;
+            i.icon-card {
+              font-size: 20px;
+            }
+          }
+          .text {
+            font-size: 14px;
+            color: #fff;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .transactions {
+    padding: 14px 24px;
+    background-color: #1B242E;
+    border-radius: 48px 48px 0 0;
+
+    .transation-list {
+      li {
+        margin-bottom: 17px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid rgba(#E2E9FF, .1);
+        &:last-child {
+          border: none;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          .icon {
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            @include center;
+            border-radius: 16px;
+            overflow: hidden;
+            img {
+              max-height: 45px;
+              max-width: 45px;
+              object-fit: cover;
+            }
+            &.with-bg {
+              background-color: #fff;
+            }
+            i {
+              color: $primary-color;
+              font-size: 24px;
+            }
+          }
+          .transaction {
+            display: flex;
+            flex-direction: column;
+            .title {
+              color: #fff;
+              font-size: 16px;
+              font-weight: bold;
+            }
+            .date {
+              font-size: 14px;
+              color: rgba(#fff,.5);
+              padding-top: 10px;
+            }
+          }
+          .money {
+            margin-left: auto;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+  h6 {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    .buttons {
+      display: flex;
+      a {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        border-radius: 15px;
+        background-color: rgba(#535F6D, .19);
+        color: #fff;
+        font-size: 16px;
+        @include center;
+        margin-left: 18px;
+      }
+    }
+  }
+
+  .menu {
+    background-color: #1A212A;
+    ul {
+      height: 60px;
+      display: flex;
+      li {
+        flex: 1;
+        a {
+          height: 60px;
+          @include center;
+          color: rgba(#fff,.5);
+          font-size: 28px;
+          i.icon-pig {
+            font-size: 24px;
+          }
+        }
+        &.active a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .page {
+    padding: 24px;
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .back-btn {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 20px;
+        margin-right: 15px;
+      }
+    }
+    .more-btn {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+
+  
+  .swiper-container {
+    margin: 0 -24px 49px;
+    padding-bottom: 45px;
+    .swiper-slide {
+      width: 331px;
+      display: flex;
+      justify-content: flex-end;
+      &:last-child {
+        width: 361px;
+        padding-right: 24px;
+      }
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        border: 1px solid #fff;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  .card {
+    min-width: 307px;
+    width: 307px;
+    height: 172px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 21px 16px 27px;
+    .bank-name {
+      font-size: 16px;
+      color: #fff;
+    }
+    .card-information {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        font-size: 15px;
+        color: #fff;
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+    img {
+      align-self: baseline;
+    }
+    &.bg-dark {
+      background: linear-gradient(to right, #141414, #292929);
+    }
+    &.bg-blue {
+      background: linear-gradient(to right, #6289FF, #5252FF);
+    }
+  }
+
+  .peoples {
+    margin: 0 -24px 45px;
+    ul {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      li {
+        scroll-snap-align: center;
+        margin-right: 15px;
+        &:first-child {
+          padding-left: 24px;
+        }
+        &:last-child {
+          padding-right: 24px;
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          .icon {
+            width: 60px;
+            height: 60px;
+            @include center;
+            background-color: $primary-color;
+            border-radius: 24px;
+            color: #fff;
+            box-shadow: 0 6px 12px 0 rgba($primary-color, .3)
+          }
+          img {
+            width: 60px;
+            border-radius: 24px;
+            height: 60px;
+            object-fit: cover;
+            box-shadow: 0 10px 20px 0 rgba(#000000, .17)
+          }
+          .name {
+            margin-top: 17px;
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .settings-menu {
+    border-top: 1px solid rgba(#E2E9FF, .1);
+    ul {
+      li {
+        border-bottom: 1px solid rgba(#E2E9FF, .1);
+        &:last-child {
+          border-bottom: none;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          padding: 22px 0;
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          i:first-child {
+            width: 30px;
+            text-align: center;
+            margin-right: 10px;
+            font-size: 16px;
+            color: $primary-color;
+          }
+          i.icon-pincode {
+            font-size: 12px;
+          }
+          .icon-arrow-right {
+            margin-left: auto;
+            font-size: 12px;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+}

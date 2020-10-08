@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+<div style="width: 377px; margin: 25px">
+
+	<div class="component--search">
+		<form action="">
+			<div class="search-icon">
+				<img src="img/search.svg" alt="">
+			</div>
+			<input type="text" placeholder="Start typing to search">
+		</form>
+		<h6>Popular searches</h6>
+		<ul>
+			<li>
+				<a href="#">Air Transport</a>
+			</li>
+			<li>
+				<a href="#">Aviation</a>
+			</li>
+			<li class="active">
+				<a href="#">Mekaniske Verksted</a>
+			</li>
+			<li>
+				<a href="#">Port Authority</a>
+			</li>
+			<li>
+				<a href="#">Sporvei</a>
+			</li>
+			<li>
+				<a href="#">Bergens Kreditbank</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<div style="width: 656px; margin: 25px">
+	<div class="component--filter-search">
+		<form action="">
+			<div class="input">
+				<div class="search-icon">
+					<img src="img/search.svg" alt="">
+				</div>
+				<input type="text" placeholder="Start typing to search">
+			</div>
+			<ul>
+				<li>
+					<label>
+						<input type="radio" checked name="type" value="project">
+						<span class="text">Projects</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="type" value="image">
+						<span class="text">Images</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="type" value="people">
+						<span class="text">People</span>
+					</label>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+
+<div style="width: 468px; margin: 25px">
+	<div class="component--filter">
+		<form action="">
+			<ul>
+				<li>
+					<div class="key">Country</div>
+					<div class="value">
+						<select name="" id="">
+							<option value="">Norway</option>
+							<option value="">Turkey</option>
+						</select>
+					</div>
+				</li>
+				<li>
+					<div class="key">City</div>
+					<div class="value">
+						<input type="text" value="Bergen">
+					</div>
+				</li>
+				<li class="filter-button">
+					<a href="#">
+						Cancel
+					</a>
+					<button type="submit">Apply Filters</button>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

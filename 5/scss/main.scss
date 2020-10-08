@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background-color: #EBEEF2;
+  padding: 40px;
+}
+
+.component {
+  &--prices {
+    max-width: 920px;
+    margin: 0 auto;
+    user-select: none;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 55px;
+
+      h3 {
+        font-size: 42px;
+        font-weight: 900;
+      }
+
+      label {
+        width: 212px;
+        height: 50px;
+        background-color: #D4D9E0;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          width: 100px;
+          height: 40px;
+          border-radius: 40px;
+          background-color: #fff;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          z-index: -1;
+          box-shadow: 0 15px 13px -12px rgba(#8693A4, .74);
+          transition: 300ms left ease-in-out;
+        }
+
+        span {
+          width: 100px;
+          height: 40px;
+          display: grid;
+          font-size: 16px;
+          font-weight: bold;
+          place-items: center;
+          color: #171922;
+          opacity: .7;
+          transition: 400ms opacity ease-in-out;
+
+          &:first-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .packages {
+      display: flex;
+      margin: 0 -20px;
+
+      .package {
+        flex: 1;
+        background-color: #fff;
+        margin: 0 20px;
+        padding: 45px;
+        color: #171922;
+        font-weight: bold;
+        transition: 400ms box-shadow ease-in-out;
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+
+        h6 {
+          margin-bottom: 35px;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .price-info {
+          margin-bottom: 30px;
+
+          .price {
+            font-size: 22px;
+            margin-bottom: 10px;
+
+            span::before {
+              content: attr(data-monthly-price);
+            }
+          }
+
+          .description {
+            font-size: 18px;
+            opacity: .71;
+
+            span::before {
+              content: attr(data-monthly-text);
+            }
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          opacity: .71;
+          margin-bottom: 35px;
+          line-height: 25px;
+        }
+
+        .button {
+          height: 60px;
+          margin-top: auto;
+          display: grid;
+          width: 100%;
+          place-items: center;
+          border: 1px solid #171922;
+          border-radius: 5px;
+          font-size: 18px;
+          font-weight: 600;
+          color: #171922;
+          transition: 400ms background-color ease-in-out, 400ms color ease-in-out;
+        }
+
+        &:hover {
+          box-shadow: 0 19px 50px -20px rgba(#8693A4, .74);
+
+          .button {
+            background-color: #171922;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    #price-switch {
+      display: none;
+      &:checked {
+        & + .title {
+          label {
+            &::before {
+              left: 105px;
+            }
+
+            span {
+              &:first-child {
+                opacity: .7;
+              }
+
+              &:last-child {
+                opacity: 1;
+              }
+            }
+          }
+
+          & + .packages {
+            .package {
+              .price-info {
+                .price span::before {
+                  content: attr(data-yearly-price);
+                }
+                .description span::before {
+                  content: attr(data-yearly-text);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

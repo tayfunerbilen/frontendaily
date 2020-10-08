@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+</head>
+<body>
+
+	<div class="component--prices">
+		<input type="checkbox" id="price-switch" checked>
+		<div class="title">
+			<h3>Choose your plan</h3>
+			<label for="price-switch">
+				<span>Monthly</span>
+				<span>Yearly</span>
+			</label>
+		</div>
+		<div class="packages">
+			<div class="package">
+				<h6>Starter</h6>
+				<div class="price-info">
+					<div class="price">
+						<span data-monthly-price="$8.99" data-yearly-price="$5.99"></span> / month
+					</div>
+					<div class="description">
+						Billed <span data-monthly-text="monthly" data-yearly-text="yearly"></span>
+					</div>
+				</div>
+				<p>
+					Pretium fusce id velit ut tortor pretium. Sit amet consectetur adipiscing elit ut. Condimentum mattis pellentesque id nibh. Euismod elementum.
+				</p>
+				<a href="#" class="button">
+					Get started
+				</a>
+			</div>
+			<div class="package">
+				<h6>Professional</h6>
+				<div class="price-info">
+					<div class="price">
+						<span data-monthly-price="$21.99" data-yearly-price="$16.99"></span> / month
+					</div>
+					<div class="description">
+						Billed <span data-monthly-text="monthly" data-yearly-text="yearly"></span>
+					</div>
+				</div>
+				<p>
+					Duis at consectetur lorem donec massa sapien faucibus. Ac placerat vestibulum lectus mauris.
+				</p>
+				<a href="#" class="button">
+					Get started
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>

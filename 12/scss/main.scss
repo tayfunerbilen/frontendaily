@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: #F7F8FC;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.component {
+  &--trial-box {
+    background: #fff;
+    box-shadow: 0 28px 30px -12px #E9ECF9;
+    padding: 55px 45px;
+    border-radius: 5px;
+    width: 566px;
+
+    h3 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #10182F;
+      margin-bottom: 25px;
+    }
+
+    .credit {
+      display: flex;
+      align-items: center;
+      margin-bottom: 70px;
+
+      .circle-bar {
+        width: 72px;
+        height: 72px;
+        transform: rotate(-90deg);
+        margin-right: 20px;
+
+        svg {
+          //--circum: calc(2 * 3.14 * 33.5);
+          //--offset: calc(var(--circum) - (var(--circum) * 60 / 100));
+          circle {
+            fill: none;
+            stroke-width: 5;
+            stroke: #DAE1F5;
+            stroke-dasharray: var(--circum);
+            stroke-dashoffset: var(--circum);
+            stroke-linecap: round;
+
+            &:nth-child(1) {
+              stroke-dashoffset: 0;
+            }
+
+            &:nth-child(2) {
+              stroke: #345ACE;
+              animation: 1s animateOffset;
+              animation-fill-mode: forwards;
+            }
+          }
+        }
+      }
+
+      .amount {
+        font-size: 26px;
+        font-weight: bold;
+        color: #10182F;
+      }
+      .text {
+        font-size: 16px;
+        color: #545D7A;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #10182F;
+      margin-bottom: 40px;
+    }
+
+    .action {
+      display: flex;
+
+      a {
+        margin-right: 15px;
+        height: 43px;
+        border: 2px solid #DAE1F5;
+        border-radius: 43px;
+        display: flex;
+        align-items: center;
+        padding: 0 35px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #10182F;
+        transition: 300ms all;
+
+        &:hover {
+          border-color: #345ACE;
+          color: #345ACE;
+        }
+
+        &.active {
+          background: #10182F;
+          color: #fff;
+          border-color: #10182F;
+          &:hover {
+            border-color: #345ACE;
+            background: #345ACE;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateOffset {
+  to {
+    stroke-dashoffset: var(--offset);
+  }
+}

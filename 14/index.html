@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+</head>
+<body>
+
+<label class="popup-open-btn" for="settings-popup">Settings</label>
+
+<input type="checkbox" checked data-popup id="settings-popup">
+<div class="popup">
+	<div class="settings-popup">
+		<label for="settings-popup" class="close-popup">
+			<img src="img/icon-close.svg" alt="">
+			<span>Close</span>
+		</label>
+		<h3>Settings</h3>
+		<ul>
+			<li>
+				<div class="item">
+					<h5>Language</h5>
+					<p>
+						Let us know which language you’re most comfortable using. You <br> can change it back at any time.
+					</p>
+					<select name="">
+						<option value="">English</option>
+						<option value="">Türkçe</option>
+						<option value="">Deutch</option>
+					</select>
+				</div>
+			</li>
+		</ul>
+		<hr>
+		<ul>
+			<li>
+				<div class="item">
+					<h5>Autoplay videos</h5>
+					<p>
+						Choose if you want to autoplay on your browser
+					</p>
+				</div>
+				<label class="checkbox-input">
+					<input type="checkbox" checked>
+					<span class="checkbox"></span>
+				</label>
+			</li>
+			<li>
+				<div class="item">
+					<h5>Show profile photos</h5>
+					<p>
+						Choose whether to show or hide profile photos of other members.
+					</p>
+				</div>
+				<label class="checkbox-input">
+					<input type="checkbox">
+					<span class="checkbox"></span>
+				</label>
+			</li>
+		</ul>
+		<div class="actions">
+			<a href="#" class="active">Save</a>
+			<a href="#">Cancel</a>
+		</div>
+	</div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

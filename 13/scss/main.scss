@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  padding: 50px;
+  background: #F7F8FC;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.component {
+  &--blog-cards {
+    max-width: 1065px;
+
+    ul {
+      display: flex;
+      margin: 0 -25px;
+
+      li {
+        padding: 0 25px;
+        width: calc(100% / 3);
+        display: flex;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          background: #fff;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 34px 36px -14px #E9ECF9;
+
+          > img {
+            width: 100%;
+          }
+
+          .inner {
+            padding: 25px 25px 30px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .category {
+              padding: 2px 10px;
+              border-radius: 10px;
+              background: var(--bgcolor);
+              align-self: flex-start;
+              color: #fff;
+              font-size: 12px;
+              text-transform: uppercase;
+              margin-bottom: 9px;
+            }
+
+            .title {
+              font-size: 18px;
+              font-weight: bold;
+              color: #10182F;
+              line-height: 23px;
+              margin-bottom: 10px;
+            }
+
+            .description {
+              font-size: 16px;
+              color: #10182F;
+              line-height: 20px;
+              margin-bottom: 40px;
+            }
+
+            .author {
+              display: flex;
+              align-items: center;
+              margin-top: auto;
+
+              img {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 10px;
+              }
+
+              .author-inner {
+                display: flex;
+                flex-direction: column;
+
+                .author-name {
+                  font-size: 16px;
+                  color: #10182F;
+                  font-weight: bold;
+                }
+
+                .date {
+                  font-size: 14px;
+                  color: #545D7A;
+                  margin-top: 3px;
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}

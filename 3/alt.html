@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+</head>
+<body>
+
+	<div class="app">
+		<div class="page">
+
+			<div class="back">
+				<a href="#" class="back-btn">
+					<i class="icon-back"></i>
+					Your Cards
+				</a>
+				<a href="#" class="more-btn">
+					<i class="icon-3dots"></i>
+				</a>
+			</div>
+
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">
+					<div class="card bg-dark">
+						<div class="bank-name">HDFC BANK</div>
+						<img src="img/chip.png" alt="">
+						<div class="card-information">
+							<div>
+								<span>****</span> <span>5432</span>
+							</div>
+							<img src="img/mastercard.png" alt="">
+						</div>
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card bg-blue">
+						<div class="bank-name">SBI BANK</div>
+						<img src="img/chip.png" alt="">
+						<div class="card-information">
+							<div>
+								<span>****</span> <span>5432</span>
+							</div>
+							<img src="img/mastercard.png" alt="">
+						</div>
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card bg-dark">
+						<div class="bank-name">HDFC BANK</div>
+						<img src="img/chip.png" alt="">
+						<div class="card-information">
+							<div>
+								<span>****</span> <span>5432</span>
+							</div>
+							<img src="img/mastercard.png" alt="">
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<h6>Send Money to</h6>
+
+			<div class="peoples">
+				<ul>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<i class="icon-plus"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<img src="https://pbs.twimg.com/profile_images/1217420465414733830/yBLI-Pzu_400x400.jpg" alt="">
+							</div>
+							<div class="name">Arno</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<h6>Card Setting</h6>
+
+			<nav class="settings-menu">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="icon-pincode"></i>
+							Change Pincode
+							<i class="icon-arrow-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon-block"></i>
+							Block  Card
+							<i class="icon-arrow-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon-download"></i>
+							Download Statment
+							<i class="icon-arrow-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon-settings"></i>
+							Settings
+							<i class="icon-arrow-right"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 'auto',
+			spaceBetween: 0,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>

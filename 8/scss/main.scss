@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #E8ECF3;
+  display: grid;
+  place-items: center;
+}
+
+.alert {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px 42px;
+  background: #0C1226;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms all;
+
+  &.active {
+    top: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #0C1226;
+}
+
+ul.color-palette {
+  display: flex;
+
+  li {
+    margin: 0 15px;
+    width: 207px;
+    height: 329px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: 300ms all;
+
+    &:hover {
+      box-shadow: 0 15px 42px -12px #A8B2C3;
+      top: -10px;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      left: -999999px;
+    }
+
+    .color {
+      width: 100%;
+      height: 251px;
+      background: var(--color);
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #0C1226;
+    }
+  }
+}
+
+.action {
+  text-align: center;
+
+  button {
+    width: 393px;
+    height: 68px;
+    background: #7E6CCA;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #0C1226;
+    line-height: 29px;
+  }
+}
+
+.shortcut-text {
+  background: #fff;
+  padding: 9px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #0C1226;
+}

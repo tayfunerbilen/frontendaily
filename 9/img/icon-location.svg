@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="23px" viewBox="0 0 20 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Day-1144-Job-Page-UI-Components" transform="translate(-843.000000, -734.000000)">
+            <g id="Group-10" transform="translate(259.000000, 170.000000)">
+                <g id="Group-9" transform="translate(0.000000, 523.000000)">
+                    <g id="Group-7">
+                        <g id="Group-6" transform="translate(581.000000, 39.000000)">
+                            <g id="Group">
+                                <polygon id="Path" points="0 0 26 0 26 26 0 26"></polygon>
+                                <circle id="Oval" stroke="#111127" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round" cx="13" cy="11.9166667" r="3.25"></circle>
+                                <path d="M19.1284167,18.0450833 L14.5318333,22.6416667 C14.1258493,23.0480537 13.5749748,23.2763935 13.0005417,23.2763935 C12.4261085,23.2763935 11.875234,23.0480537 11.46925,22.6416667 L6.87158333,18.0450833 C3.48716779,14.6604934 3.48726204,9.17314475 6.87179386,5.78867106 C10.2563257,2.40419738 15.7436743,2.40419738 19.1282061,5.78867106 C22.512738,9.17314475 22.5128322,14.6604934 19.1284167,18.0450833 Z" id="Path" stroke="#111127" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

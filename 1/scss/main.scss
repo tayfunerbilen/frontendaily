@@ -1,0 +1,240 @@
+// reset
+@import "reset";
+
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap";
+
+body {
+  background: #303236;
+  font-family: Muli;
+}
+
+.component--search {
+  background: #3D3F43;
+  border-radius: 15px;
+  padding: 40px 45px;
+  box-shadow: 0 15px 25px -20px #202125;
+
+  form {
+    position: relative;
+    margin-bottom: 30px;
+
+    .search-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 53px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input {
+      height: 50px;
+      width: 100%;
+      background: #303236;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #fff;
+      padding-left: 53px;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: rgba(#fff, .5);
+      }
+    }
+  }
+
+  h6 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin-top: 13px;
+
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        padding: 7px 0;
+
+        &:hover {
+          color: #2CCDEA;
+          font-weight: bold;
+        }
+      }
+
+      &.active a {
+        color: #2CCDEA;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.component--filter-search {
+  background: #3D3F43;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px -20px #202125;
+
+  form {
+    height: 68px;
+    padding: 14px;
+    display: flex;
+
+    .input {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      .search-icon {
+        width: 50px;
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        height: 40px;
+        font-size: 16px;
+        color: #fff;
+
+        &:focus {
+          outline: 0;
+        }
+
+        &::placeholder {
+          color: rgba(#fff, .5);
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      margin-left: 15px;
+
+      li {
+        label {
+          .text {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 0 25px;
+            cursor: pointer;
+            border-radius: 40px;
+            transition: 400ms background-color, 400ms color;
+          }
+
+          input {
+            display: none;
+
+            &:checked + .text {
+              background-color: #303236;
+              color: #2CCDEA;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.component--filter {
+  background: #3D3F43;
+  border-radius: 15px;
+  padding: 40px 45px;
+  box-shadow: 0 15px 25px -20px #202125;
+
+  form {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        .key {
+          width: 100px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff;
+        }
+
+        .value {
+          flex: 1;
+
+          input, select {
+            height: 50px;
+            width: 100%;
+            background: #303236;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            padding: 0 20px;
+
+            &:focus {
+              outline: 0;
+            }
+
+            &::placeholder {
+              color: rgba(#fff, .5);
+            }
+          }
+
+          select {
+            cursor: pointer;
+            appearance: none;
+            background: #303236 url(../img/arrow-down.svg) no-repeat calc(100% - 30px) center;
+          }
+        }
+
+        &.filter-button {
+          margin-top: 40px;
+          border-top: 1px solid #303236;
+          padding-top: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          a {
+            color: rgba(#fff, .5);
+            text-decoration: none;
+            font-size: 16px;
+            &:hover {
+              color: #fff;
+            }
+          }
+
+          button {
+            height: 50px;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #31A5D9, #1E96A0);
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 7px 10px 0 rgba(#2B2D30, .5);
+          }
+        }
+      }
+    }
+  }
+}

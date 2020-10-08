@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Day-1183-Search/Filter-UI-COmponents" transform="translate(-313.000000, -354.000000)">
+            <g id="Group-5-Copy" transform="translate(251.000000, 301.000000)">
+                <g id="Group-3" transform="translate(45.000000, 40.000000)">
+                    <g id="Group-2">
+                        <g id="Group" transform="translate(15.000000, 11.000000)">
+                            <polygon id="Path" points="0 0 28 0 28 28 0 28"></polygon>
+                            <circle id="Oval" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" cx="11.6666667" cy="11.6666667" r="8.16666667"></circle>
+                            <path d="M24.5,24.5 L17.5,17.5" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

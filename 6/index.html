@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+</head>
+<body>
+
+	<label for="popup-1" class="popup-toggle-btn">
+		<img src="img/share-icon.svg" alt="">
+		Share
+	</label>
+
+	<input type="checkbox" id="popup-1" checked class="popup-toggle">
+	<div class="popup">
+		<label for="popup-1" class="popup-close-fixed"></label>
+		<div class="popup-inner share-popup">
+			<label for="popup-1" class="popup-close">
+				<img src="img/close.svg" alt="">
+			</label>
+			<h4>Share this design</h4>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/twitter.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/facebook.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pinterest.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/linkedin.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/tumblr.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/instagram.svg" alt="">
+					</a>
+				</li>
+			</ul>
+			<h6>or copy link</h6>
+			<div class="input">
+				<input type="text" readonly id="input-url" value="https://www.uidesigndaily.com/posts/5d6ab9ea91deae0012006d44">
+				<button type="button" onclick="copy('input-url')">Copy</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
