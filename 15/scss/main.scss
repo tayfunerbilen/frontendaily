@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: #161E29;
+  padding: 50px;
+}
+
+.component {
+  &--followers {
+    background: #1B2431;
+    border-radius: 10px;
+    padding: 30px;
+    width: 412px;
+    box-shadow: 0 10px 20px -20px #081323;
+    margin-bottom: 50px;
+
+    ul {
+      display: flex;
+      margin: 0 -10px;
+
+      li {
+        flex: 1 1 auto;
+        margin: 0 10px;
+
+        a {
+          display: flex;
+          align-items: center;
+          background: #161E29;
+          padding: 7px 10px;
+          border-radius: 5px;
+          font-size: 16px;
+          color: #C9CEDF;
+          justify-content: center;
+          text-align: center;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &--user-info {
+    background: #1B2431;
+    border-radius: 10px;
+    padding: 39px;
+    width: 344px;
+    box-shadow: 0 10px 20px -20px #081323;
+    margin-bottom: 50px;
+
+    ul {
+      li {
+        font-size: 16px;
+        color: #C9CEDF;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: #587DFB;
+        }
+
+        .icon {
+          text-align: center;
+          width: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &--team {
+    background: #1B2431;
+    border-radius: 10px;
+    padding: 40px 40px 50px;
+    width: 503px;
+    box-shadow: 0 10px 20px -20px #081323;
+    margin-bottom: 50px;
+
+    h5 {
+      font-size: 22px;
+      color: #C9CEDF;
+      margin-bottom: 40px;
+      font-weight: normal;
+    }
+
+    ul {
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .team {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          color: #C9CEDF;
+
+          img {
+            margin-right: 14px;
+          }
+        }
+
+        .team-members {
+          display: flex;
+          flex-direction: row-reverse;
+
+          a {
+            margin-left: -10px;
+
+            img {
+              border: 2px solid #1B2431;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--skills {
+    width: 434px;
+
+    h5 {
+      font-size: 22px;
+      color: #C9CEDF;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -5px;
+
+      li {
+        margin: 5px;
+
+        a {
+          display: block;
+          padding: 15px 25px;
+          background: #1B2431;
+          border-radius: 10px;
+          font-size: 16px;
+          color: #C9CEDF;
+          transition: 300ms background-color;
+          box-shadow: 0 10px 20px -20px #081323;
+          &:hover {
+            background: lighten(#1B2431, 5%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Day-1156-Profile-Page-UI-Components" transform="translate(-367.000000, -551.000000)">
+            <g id="Group-3" transform="translate(326.000000, 391.000000)">
+                <g id="Group-2-Copy-2" transform="translate(39.000000, 157.000000)">
+                    <g id="Group">
+                        <polygon id="Path" points="0 0 26 0 26 26 0 26"></polygon>
+                        <polyline id="Path" stroke="#C9CEDF" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round" points="7.58333333 10.8333333 13 4.33333333 18.4166667 10.8333333"></polyline>
+                        <path d="M22.75,10.8333333 L20.5833333,19.5 C20.3743071,20.7813754 19.4626483,21.6930342 18.4166667,21.6666667 L7.58333333,21.6666667 C6.53735168,21.6930342 5.62569286,20.7813754 5.41666667,19.5 L3.25,10.8333333 L22.75,10.8333333 Z" id="Path" stroke="#C9CEDF" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <circle id="Oval" stroke="#C9CEDF" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round" cx="13" cy="16.25" r="2.16666667"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
