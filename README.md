@@ -95,3 +95,9 @@ daily css resources with video tutorials
 ![](14/14.png)
 
 [DEMO](https://frontendaily.com/day/14) | [Sketch](https://uidesigndaily.com/posts/sketch-settings-pop-up-controls-day-946) | [TUTORIAL](https://www.youtube.com/watch?v=pMDP9yfvhKA)
+
+### Day 15 - Profile Page Components
+
+![](15/15.png)
+
+[DEMO](https://frontendaily.com/day/15) | [Sketch](https://uidesigndaily.com/posts/sketch-profile-page-components-cards-tags-day-1156) | [TUTORIAL](https://www.youtube.com/watch?v=C0WkmZVQlLs)
