@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Day-1145-Recipe-Page-UI-Components---real-pixels" transform="translate(-1194.000000, -638.000000)">
+            <g id="Group-16" transform="translate(1136.000000, 534.000000)">
+                <g id="Group-11" transform="translate(40.000000, 88.000000)">
+                    <g id="Group" transform="translate(15.000000, 13.000000)">
+                        <polygon id="Path" points="0 0 34 0 34 34 0 34"></polygon>
+                        <circle id="Oval" stroke="#111127" stroke-width="2.125" stroke-linecap="round" stroke-linejoin="round" cx="14.1666667" cy="14.1666667" r="9.91666667"></circle>
+                        <path d="M29.75,29.75 L21.25,21.25" id="Path" stroke="#111127" stroke-width="2.125" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

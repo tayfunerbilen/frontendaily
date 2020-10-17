@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Nunito Sans', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background-color: #F6F8FC;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.help-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #202842;
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  .inner {
+    width: 558px;
+  }
+
+  form {
+    position: relative;
+    margin-bottom: 66px;
+
+    .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 63px;
+      display: grid;
+      place-items: center;
+    }
+
+    input {
+      background: #fff;
+      border-radius: 10px;
+      height: 63px;
+      width: 100%;
+      box-shadow: 0 9px 10px -4px rgba(#C9D6EF, .46);
+      font-size: 16px;
+      color: #202842;
+      padding: 0 20px 0 68px;
+
+      &::placeholder {
+        color: #828D97;
+      }
+    }
+  }
+
+  .dropdown-container {
+    margin-bottom: 70px;
+
+    li {
+      margin-bottom: 25px;
+      border-bottom: 2px solid #DEE4F1;
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 51px;
+        padding-top: 5px;
+        font-size: 18px;
+        color: #202842;
+        cursor: pointer;
+
+        img {
+          transition: 300ms all;
+        }
+      }
+
+      .dropdown-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: 500ms all;
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgba(#202842, .6);
+      }
+
+      input {
+        display: none;
+
+        &:checked + label {
+          img {
+            transform: rotate(-180deg);
+          }
+
+          & + .dropdown-content {
+            max-height: 50vh;
+            padding-bottom: 20px;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .help-articles {
+    width: 838px;
+
+    ul {
+      display: flex;
+      margin: 0 calc(-35px / 2);
+
+      li {
+        margin: 0 calc(35px / 2);
+
+        a {
+          display: block;
+          box-shadow: 0 9px 10px -4px rgba(#C9D6EF, .46);
+          border-radius: 10px;
+          background: #fff;
+          transition: 300ms all;
+
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            display: block;
+            height: 128px;
+            object-fit: cover;
+          }
+
+          .title {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #202842;
+          }
+
+          &:hover {
+            transform: scale(1.04);
+          }
+        }
+      }
+    }
+  }
+}

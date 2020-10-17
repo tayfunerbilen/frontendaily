@@ -101,3 +101,21 @@ daily css resources with video tutorials
 ![](15/15.png)
 
 [DEMO](https://frontendaily.com/day/15) | [Sketch](https://uidesigndaily.com/posts/sketch-profile-page-components-cards-tags-day-1156) | [TUTORIAL](https://www.youtube.com/watch?v=C0WkmZVQlLs)
+
+### Day 16 - Help Center
+
+![](16/16.png)
+
+[DEMO](https://frontendaily.com/day/16) | [Sketch](https://uidesigndaily.com/posts/sketch-help-center-accordion-list-panel-cards-search-day-1088) | [TUTORIAL](https://www.youtube.com/watch?v=ih00vHmNZrU)
+
+### Day 17 - Recipe Components
+
+![](17/17.png)
+
+[DEMO](https://frontendaily.com/day/17) | [Sketch](https://uidesigndaily.com/posts/sketch-recipe-components-subscribe-tags-card-rating-day-1145) | [TUTORIAL](https://www.youtube.com/watch?v=wWsjFgviw6s)
+
+### Day 18 - UI Components
+
+![](18/18.png)
+
+[DEMO](https://frontendaily.com/day/18) | [Sketch](https://uidesigndaily.com/posts/sketch-ui-components-table-profile-card-day-1202) | [TUTORIAL](https://www.youtube.com/watch?v=bf2MU1kam_M)

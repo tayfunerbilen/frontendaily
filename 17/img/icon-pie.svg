@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Day-1145-Recipe-Page-UI-Components---real-pixels" transform="translate(-377.000000, -924.000000)">
+            <g id="Group-10" transform="translate(202.000000, 878.000000)">
+                <g id="Group-8" transform="translate(173.000000, 43.000000)">
+                    <g id="Group">
+                        <polygon id="Path" points="0 0 30 0 30 30 0 30"></polygon>
+                        <path d="M12.5,4 C7.08752156,5.25473831 3.40157257,10.2727873 3.8230527,15.8127914 C4.24453282,21.3527955 8.64720448,25.7554672 14.1872086,26.1769473 C19.7272127,26.5984274 24.7452617,22.9124784 26,17.5 C26,16.8096441 25.4403559,16.25 24.75,16.25 L16.25,16.25 C14.8692881,16.25 13.75,15.1307119 13.75,13.75 L13.75,5 C13.7186308,4.70086453 13.5687835,4.42674671 13.3339171,4.23885359 C13.0990507,4.05096046 12.7987254,3.96494019 12.5,4" id="Path" stroke="#111127" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.75,4.375 C21.9647572,5.50695423 24.4930458,8.0352428 25.625,11.25 L20,11.25 C19.3096441,11.25 18.75,10.6903559 18.75,10 L18.75,4.375" id="Path" stroke="#111127" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
